@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+}
+body{
+	background-color: #f2f2f2;
+}
+header{
+	
+	padding:50px 0;
+}
+/*MENU TOP*/
+.menu--top{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding:0 100px;
+}
+.menu--top--left{
+	cursor: pointer;
+}
+.menu--top--right{
+	display: flex;
+}
+.menu--top--right--social{
+	display: flex;
+	margin-right: 300px;
+}
+.menu--top--right--social--item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border:1px solid #e3e3e3;
+	border-radius: 50%;
+	margin-right: 5px;
+	cursor: pointer;
+	color: #999999;
+}
+.menu--top--right--social--item:hover{
+color: #4057ba;
+background-color: #fff;
+}
+.menu--top--right--social--item i{
+
+}
+.menu--top--right--search form{
+	display: flex;
+}
+	.menu--top--right--search form button{
+		background:transparent;
+		border:none;
+		font-size: 23px;
+		color: #aaa;
+		margin-left: -30px;
+		cursor: pointer;
+	}
+.menu--top--right--search form input{
+	padding: 5px 50px 5px 0;
+	border-color: #ccc;
+	border-radius: 5px;
+}
+/*END OF MENU TOP*/
+
+/*MENU BOTTOM*/
+	.menu--bottom{
+		background-color: #4057ba;
+	}
+	.menu--bottom nav ul{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.menu--bottom nav ul li{
+		padding:15px 30px;
+	}
+	.menu--bottom nav ul li:hover{
+		transition: all ease-in 0.3s;
+		background-color: #027974;
+	}
+	.menu--bottom nav ul li a{
+		text-transform: uppercase;
+		color: #e9e9e9;
+		font-weight: 700;
+	}
+	.menu--bottom nav ul li a:hover{
+		color: #fff;
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 230px;
+		position: absolute;
+		background-color: #027974;
+		margin-top: 15px;
+		padding:10px 0;
+		margin-left: -30px;/*Gambiarra*/
+		text-align: center;
+		line-height: 40px;
+		font-size: 0.8rem;
+		display: none;
+	}
+	.menu--bottom nav ul li:hover .submenu{
+		display: block; 
+	}
+
+	.submenu--item:hover{
+		background-color: #03928c;
+	}
+/*END OF MENU BOTTOM*/
