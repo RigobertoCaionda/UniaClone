@@ -44,13 +44,25 @@ header{
 	margin-right: 5px;
 	cursor: pointer;
 	color: #999999;
+	overflow: hidden;/*Para evitar que os icones vao para cima quando tiverem hover*/
+}
+.menu--top--right--social--item i{
+	transition: all ease-out 0.3s;
 }
 .menu--top--right--social--item:hover{
 color: #4057ba;
 background-color: #fff;
+border-color: #4057ba;
 }
-.menu--top--right--social--item i{
-
+@keyframes translateSocial{
+	0%{
+		opacity: 0;
+		transform: translateY(-200%);
+	}
+}
+.menu--top--right--social--item:hover i{
+	animation-name: translateSocial;
+	animation-duration: 0.3s;
 }
 .menu--top--right--search form{
 	display: flex;
@@ -114,3 +126,91 @@ background-color: #fff;
 		background-color: #03928c;
 	}
 /*END OF MENU BOTTOM*/
+
+/*SECRETARIA VIRTUAL*/
+.secretaria--virtual{
+	margin:0 200px;
+}
+.secretaria--virtual--item fieldset{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:5px 20px;
+}
+.secretaria--virtual--item:hover fieldset{
+	background-color: #fff;
+}
+.secretaria--virtual--item fieldset legend{
+	color: #444444;
+}
+.secretaria--virtual--item--text{
+	text-align: center;
+	width: 400px;
+	color: #5284e7;
+}
+.helpIcons{
+	position: fixed;
+	right: 0;
+	top: 250px;
+}
+.helpIcons--item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 50px;
+	background-color: #6b82a2;
+	border-bottom: 1px solid #7c91ae;
+	cursor: pointer;
+}
+.helpIcons--item i{
+	color: #bfcfe6;
+	font-size: 1.4rem;
+}
+.helpIcons--item:first-child{
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.helpIcons--item:last-child{
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; 
+	border-bottom: 0;
+}
+.helpIcons--box{
+	position: fixed;
+	width: 300px;
+	background-color: #fff;
+	padding:10px 15px 50px 15px;
+	/*right: 45px;*/
+	right: -300px;
+	top: 250px;
+	border:6px solid #6b82a2;
+	transition: all ease-out 0.4s;
+}
+.helpIcons--box--title{
+	padding:15px 0 15px 20px;
+	background-color: #4057ba;
+	margin-bottom: 25px;
+	color: #fff;
+}
+.helpIcons--box--text{
+	text-align: center;
+	color: #666666;
+}
+.helpIcons--box--text span{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background-color: #c94943;
+	text-align: center;
+	line-height: 23px;
+	color: #fff;
+}
+.alignment{
+	text-align: left;
+}
+.setRight{
+	right: 45px;
+}
+/*END OF SECRETARIA VIRTUAL*/
