@@ -17,3 +17,25 @@ document.querySelectorAll('.helpIcons--item').forEach((item, index)=>{
 		}
 	});
 });
+document.querySelector('.menu--toggle').addEventListener('click',()=>{
+	let menuBottom = document.querySelector('.menu--bottom');
+	if(menuBottom.classList.contains('removeMargin')){
+		menuBottom.classList.remove('removeMargin');
+	}else{
+		menuBottom.style.transition = 'all ease-in 0.4s';
+		menuBottom.classList.add('removeMargin');
+	}
+});
+document.querySelectorAll('.prevent--default').forEach((item)=>{
+	item.addEventListener('click',(e)=>{
+		e.preventDefault();
+		let submenu = item.closest('li').querySelector('.submenu');
+		if(submenu.style.display == ""){
+			submenu.style.display = 'block';
+		}else if(submenu.style.display == "block"){
+			submenu.style.display = 'none';
+		}else if(submenu.style.display == 'none'){
+			submenu.style.display = 'block';
+		}
+	});
+});

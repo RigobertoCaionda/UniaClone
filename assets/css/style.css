@@ -28,10 +28,11 @@ header{
 }
 .menu--top--right{
 	display: flex;
+	align-items: center;
 }
 .menu--top--right--social{
 	display: flex;
-	margin-right: 300px;
+	margin-right: 227px;
 }
 .menu--top--right--social--item{
 	display: flex;
@@ -66,6 +67,15 @@ border-color: #4057ba;
 }
 .menu--top--right--search form{
 	display: flex;
+	margin-right: 20px;
+}
+.menu--toggle{
+	display: none;
+}
+.menu--toggle img{
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
 }
 	.menu--top--right--search form button{
 		background:transparent;
@@ -85,6 +95,10 @@ border-color: #4057ba;
 /*MENU BOTTOM*/
 	.menu--bottom{
 		background-color: #4057ba;
+	}
+	.removeMargin{
+		margin-left: 0!important;
+		transition: all ease-in 0.4s;
 	}
 	.menu--bottom nav ul{
 		display: flex;
@@ -107,7 +121,7 @@ border-color: #4057ba;
 		color: #fff;
 	}
 	.menu--bottom nav ul li .submenu{
-		width: 255px;
+		width: 250px;
 		position: absolute;
 		background-color: #027974;
 		margin-top: 15px;
@@ -638,5 +652,177 @@ border-color: #4057ba;
 /*END OF FOOTER*/
 
 /*TABLET VERSION*/
+@media(min-width: 768px) and (max-width: 1023px){
+	/*MENU--TOP*/
+	.menu--toggle{
+	display: block;
+}
+	.menu--top{
+		padding:0 50px;
+	}
+	.menu--top--left--logo img{
+		width: 150px;
+		object-fit: cover;
+	}
+	.menu--top--right--social{
+	margin-right: 15px;
+}
+	/*END OF MENU--TOP*/
+	
+	/*MENU--BOTTOM*/
+	.menu--bottom{
+		width: 45vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		padding-top: 70px;
+		margin-left: -45vw;
+	}
+		.menu--bottom nav ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.menu--bottom nav ul li{
+		width: 100%;
+		padding:20px 30px;
+		text-align: center;
+	}
+	.menu--bottom nav ul li:hover .submenu{
+		display: none; 
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 100%;
+	}
+	.menu--bottom nav ul li .submenu a{
+		color: #aaa;
+	}
+	/*END OF MENU--BOTTOM*/
 
+	/*SECRETARIA VIRTUAL*/
+		.secretaria--virtual{
+	margin:0 50px 20px 50px;
+}
+		.secretaria--virtual--item--text{
+			width: 280px;
+}
+		.helpIcons--box{
+			width: 260px;
+			padding:10px 15px 30px 15px;
+			/*right: 45px;*/
+}
+.helpIcons--box--title{
+	font-size: 0.9rem;
+}
+.helpIcons--box--text{
+	font-size: 0.9rem;
+}
+	/*END OF SECRETARIA VIRTUAL*/
+	
+	/*MAINCONTENT*/
+		.main--container{
+			grid-template-columns: 1fr 1fr;
+		}
+		/*MENU--TOP*/
+		.main--top{
+			flex-direction: column;
+		}
+		.video--title{
+		padding:20px;
+		font-size: 0.9rem;
+	}
+		.video--item{
+			width: 100%;
+	}
+		.slider--width{
+			width: 350px;
+	}
+		.slider--item img{
+		width: 374px;
+	}
+		.journal--middle--item{
+			padding:10px 10px 25px 10px;
+		}
+		.journal--middle--img img{
+			width: 100%;
+		}
+		/*END OF MENU--TOP*/
+
+		/*MENU--BOTTOM*/
+			.main--bottom--title{
+				font-size: 1rem;
+	}
+			.main--bottom--title--big{
+				font-size: 1.1rem;
+			}
+			.news--and--events{
+				grid-template-columns: repeat(2,1fr);
+				align-items: flex-end;
+				gap:0;
+			}
+		.news--and--events--item--title{
+				width: 160px;
+				font-size: 0.7rem;
+			}
+		/*END OF MENU--BOTTOM*/
+
+		/*ASIDE*/
+			.facebook--title{
+				font-size: 0.9rem;
+				margin-bottom: 0px;
+		}
+		.warnings--title{
+		padding:15px 20px;
+			font-size: 1rem;
+		}
+		.text--only{
+			font-size: 0.8rem;
+		}
+		.courses--title{
+			padding:15px 20px;
+			font-size: 1rem;
+		}
+		.courses--item--text{
+			font-size: 0.8rem;
+		}
+		/*END OF ASIDE*/
+	/*END OF MAINCONTENT*/
+	
+	/*FOOTER*/
+		.quick--links{
+			padding-left: 30px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+}
+	.quick--links--item--title{
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 20px;
+		font-size: 0.7rem;
+}
+	.quick--links--item{
+		margin-right: 15px;
+	}
+	.quick--links--item--links--inner a{
+		font-size: 0.7rem;
+	}
+	.quick--links--item--links--inner span{
+		font-size: 0.7rem;
+	}
+
+	.banner img{
+				width: 600px;
+			}
+			.contacts{
+			padding-left: 90px;
+	}
+	.contacts--title{
+		font-size: 0.9rem;
+}
+.contacts--item--street, .contacts--item--number, .contacts--item--email{
+	font-size: 0.9rem;
+}
+	/*END OF FOOTER*/
+}
 /*END OF TABLET VERSION*/
