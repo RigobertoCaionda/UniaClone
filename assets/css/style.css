@@ -1037,6 +1037,7 @@ border-color: #4057ba;
 	.banner img{
 				width: 300px;
 				margin-top: 20px;
+				object-fit: cover;
 			}
 			.contacts{
 			padding-left: 90px;
@@ -1254,6 +1255,7 @@ border-color: #4057ba;
 	.banner img{
 				width: 300px;
 				margin-top: 20px;
+				object-fit: cover;
 			}
 			.contacts{
 			padding-left: 90px;
@@ -1482,6 +1484,7 @@ border-color: #4057ba;
 	.banner img{
 				width: 300px;
 				margin-top: 20px;
+				object-fit: cover;
 			}
 			.contacts{
 			padding-left: 90px;
