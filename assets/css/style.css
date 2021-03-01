@@ -651,7 +651,22 @@ border-color: #4057ba;
 }
 /*END OF FOOTER*/
 
-/*TABLET VERSION*/
+/*LAPTOP VERSION - 1024px*/
+	@media(min-width: 1024px) and (max-width: 1439px){
+		.menu--bottom nav ul li a{
+		text-transform: uppercase;
+		font-size: 0.8rem;
+	}
+	.menu--bottom nav ul li{
+		padding:15px 20px 15px 20px;
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 220px;
+	}
+	}
+/*END OF LAPTOP VERSION*/
+
+/*TABLET VERSION - 768px*/
 @media(min-width: 768px) and (max-width: 1023px){
 	/*MENU--TOP*/
 	.menu--toggle{
@@ -826,3 +841,668 @@ border-color: #4057ba;
 	/*END OF FOOTER*/
 }
 /*END OF TABLET VERSION*/
+
+/*MOBILE VERSION - 425px*/
+@media(min-width: 425px) and (max-width: 767px){
+	/*MENU--TOP*/
+	.menu--toggle{
+	display: block;
+	position: absolute;
+	top: 8%;
+	right: 5%;
+}
+	
+	.menu--top--right--search form input{
+	padding: 5px 140px 5px 0;
+}
+	.menu--top{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding:0 16px;
+	}
+	.menu--top--right{
+		flex-direction: column;
+	}
+	
+	.menu--top--right--social{
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+	/*END OF MENU--TOP*/
+	
+	/*MENU--BOTTOM*/
+	.menu--bottom{
+		width: 45vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		padding-top: 70px;
+		margin-left: -45vw;
+	}
+		.menu--bottom nav ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.menu--bottom nav ul li{
+		width: 100%;
+		padding:20px 30px;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	.menu--bottom nav ul li:hover .submenu{
+		display: none; 
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 100%;
+	}
+	.menu--bottom nav ul li .submenu a{
+		color: #aaa;
+		font-size: 0.6rem;
+	}
+	/*END OF MENU--BOTTOM*/
+
+	/*SECRETARIA VIRTUAL*/
+		.helpIcons{
+			display: none;
+		}
+		.secretaria--virtual{
+	margin:0 50px 20px 50px;
+	}
+
+		.secretaria--virtual--item--text{
+					width: 250px;
+					margin-top: 10px;
+				}
+				fieldset{
+					flex-direction: column;
+				}
+		
+	/*END OF SECRETARIA VIRTUAL*/
+	
+	/*MAINCONTENT*/
+		.main--container{
+			grid-template-columns: 1fr;
+		}
+		/*MENU--TOP*/
+		.main--top{
+			flex-direction: column;
+		}
+		.video--title{
+		padding:20px;
+		font-size: 0.8rem;
+	}
+		.video--item{
+			width: 100%;
+	}
+		.slider--width{
+			width: 350px;
+	}
+		.slider--item img{
+		width: 95vw;
+	}
+		.journal--middle--item{
+			padding:10px 10px 25px 10px;
+		}
+		.journal--middle--img img{
+			width: 100%;
+		}
+		/*END OF MENU--TOP*/
+
+		/*MENU--BOTTOM*/
+			.main--bottom--title{
+				font-size: 0.8rem;
+	}
+			.main--bottom--title--big{
+				font-size: 0.9rem;
+			}
+			.news--and--events{
+				grid-template-columns: repeat(2,1fr);
+				align-items: flex-end;
+				gap:0;
+			}
+		.news--and--events--item--title{
+				width: 130px;
+				font-size: 0.5rem;
+			}
+			.bunch--of--links--item a{
+				font-size: 0.5rem;
+			}
+		/*END OF MENU--BOTTOM*/
+
+		/*ASIDE*/
+			.facebook--title{
+				font-size: 0.7rem;
+				margin-bottom: 0px;
+		}
+		.social--sharing{
+			height: 300px;
+		}
+		.social--sharing h1{
+			line-height: 300px;
+			font-size: 1.5rem;
+		}
+		.warnings--title{
+		padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.text--only{
+			font-size: 0.6rem;
+		}
+		.courses--title{
+			padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.courses--item--text{
+			font-size: 0.6rem;
+		}
+		/*END OF ASIDE*/
+	/*END OF MAINCONTENT*/
+	
+	/*FOOTER*/
+	.first--header{
+		padding:15px 35px;
+	}
+	.first--header a, span{
+		font-size: 0.7rem;
+	}
+		.quick--links{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			padding-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 15px;
+	}
+	.quick--links--item--title{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		font-size: 0.7rem;
+}
+	.quick--links--item{
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.quick--links--item--links--inner a{
+		font-size: 0.7rem;
+	}
+	.quick--links--item--links--inner span{
+		font-size: 0.7rem;
+		margin-bottom: 25px;
+	}
+
+	.banner img{
+				width: 300px;
+				margin-top: 20px;
+			}
+			.contacts{
+			padding-left: 90px;
+	}
+	.contacts--title{
+		font-size: 0.7rem;
+}
+.contacts--item--street, .contacts--item--number, .contacts--item--email{
+	font-size: 0.7rem;
+}
+.last--header{
+	padding:30px;
+	font-size: 0.6rem;
+	text-align: center;
+	}
+	/*END OF FOOTER*/
+}
+/*END OF MOBILE VERSION*/
+
+/*MOBILE VERSION - 375px*/
+@media(min-width: 375px) and (max-width: 424px){
+	/*MENU--TOP*/
+	.menu--toggle{
+	display: block;
+	position: absolute;
+	top: 8%;
+	right: 5%;
+}
+	
+	.menu--top--right--search form input{
+	padding: 5px 140px 5px 0;
+}
+	.menu--top{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding:0 16px;
+	}
+	.menu--top--right{
+		flex-direction: column;
+	}
+	
+	.menu--top--right--social{
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+	/*END OF MENU--TOP*/
+	
+	/*MENU--BOTTOM*/
+	.menu--bottom{
+		width: 45vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		padding-top: 70px;
+		margin-left: -45vw;
+	}
+		.menu--bottom nav ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.menu--bottom nav ul li{
+		width: 100%;
+		padding:20px 30px;
+		text-align: center;
+		font-size: 0.6rem;
+	}
+	.menu--bottom nav ul li:hover .submenu{
+		display: none; 
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 100%;
+	}
+	.menu--bottom nav ul li .submenu a{
+		color: #aaa;
+		font-size: 0.5rem;
+	}
+	/*END OF MENU--BOTTOM*/
+
+	/*SECRETARIA VIRTUAL*/
+		.helpIcons{
+			display: none;
+		}
+		.secretaria--virtual{
+	margin:0 25px 20px 25px;
+	}
+
+		.secretaria--virtual--item--text{
+					width: 250px;
+					margin-top: 10px;
+				}
+				fieldset{
+					flex-direction: column;
+				}
+		
+	/*END OF SECRETARIA VIRTUAL*/
+	
+	/*MAINCONTENT*/
+		.main--container{
+			grid-template-columns: 1fr;
+		}
+		/*MENU--TOP*/
+		.main--top{
+			flex-direction: column;
+		}
+		.video--title{
+		padding:20px;
+		font-size: 0.8rem;
+	}
+		.video--item{
+			width: 100%;
+	}
+		.slider--width{
+			width: 350px;
+	}
+		.slider--item img{
+		width: 95vw;
+	}
+		.journal--top h1, h2{
+			font-size: 0.8rem;
+		}
+		.journal--middle--item{
+			padding:10px 10px 25px 10px;
+		}
+		.journal--middle--img img{
+			width: 100%;
+		}
+		/*END OF MENU--TOP*/
+
+		/*MENU--BOTTOM*/
+			.main--bottom--title{
+				font-size: 0.8rem;
+	}
+			.main--bottom--title--big{
+				font-size: 0.9rem;
+			}
+			.news--and--events{
+				grid-template-columns: repeat(2,1fr);
+				align-items: flex-end;
+				gap:0;
+			}
+		.news--and--events--item--title{
+				width: 130px;
+				font-size: 0.5rem;
+			}
+			.bunch--of--links--item a{
+				font-size: 0.5rem;
+			}
+		/*END OF MENU--BOTTOM*/
+
+		/*ASIDE*/
+			.facebook--title{
+				font-size: 0.7rem;
+				margin-bottom: 0px;
+		}
+		.social--sharing{
+			height: 300px;
+		}
+		.social--sharing h1{
+			line-height: 300px;
+			font-size: 1.5rem;
+		}
+		.warnings--title{
+		padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.text--only{
+			font-size: 0.6rem;
+		}
+		.courses--title{
+			padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.courses--item--text{
+			font-size: 0.6rem;
+		}
+		/*END OF ASIDE*/
+	/*END OF MAINCONTENT*/
+	
+	/*FOOTER*/
+	.first--header{
+		padding:15px 35px;
+	}
+	.first--header a, span{
+		font-size: 0.7rem;
+	}
+		.quick--links{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			padding-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 15px;
+	}
+	.quick--links--item--title{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		font-size: 0.7rem;
+}
+	.quick--links--item{
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.quick--links--item--links--inner a{
+		font-size: 0.7rem;
+	}
+	.quick--links--item--links--inner span{
+		font-size: 0.7rem;
+		margin-bottom: 25px;
+	}
+
+	.banner img{
+				width: 300px;
+				margin-top: 20px;
+			}
+			.contacts{
+			padding-left: 90px;
+	}
+	.contacts{
+		padding-left: 50px;
+	}
+	.contacts--item--button a button{
+		font-size: 0.6rem;
+	}
+	.contacts--title{
+		font-size: 0.7rem;
+}
+.contacts--item--street, .contacts--item--number, .contacts--item--email{
+	font-size: 0.7rem;
+}
+.last--header{
+	padding:30px;
+	font-size: 0.6rem;
+	text-align: center;
+	}
+	/*END OF FOOTER*/
+}
+/*END OF MOBILE VERSION*/
+
+/*MOBILE VERSION - 320px*/
+@media(max-width: 374px){
+	/*MENU--TOP*/
+	.menu--toggle{
+	display: block;
+	position: absolute;
+	top: 8%;
+	right: 5%;
+}
+	
+	.menu--top--right--search form input{
+	padding: 5px 95px 5px 0;
+}
+	.menu--top{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding:0 16px;
+	}
+	.menu--top--left--logo img{
+		width: 240px;
+	}
+	.menu--top--right{
+		flex-direction: column;
+	}
+	
+	.menu--top--right--social{
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+	/*END OF MENU--TOP*/
+	
+	/*MENU--BOTTOM*/
+	.menu--bottom{
+		width: 45vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		padding-top: 70px;
+		margin-left: -45vw;
+	}
+		.menu--bottom nav ul{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.menu--bottom nav ul li{
+		width: 100%;
+		padding:20px 30px;
+		text-align: center;
+		font-size: 0.5rem;
+	}
+	.menu--bottom nav ul li:hover .submenu{
+		display: none; 
+	}
+	.menu--bottom nav ul li .submenu{
+		width: 100%;
+	}
+	.menu--bottom nav ul li .submenu a{
+		color: #aaa;
+		font-size: 0.5rem;
+	}
+	/*END OF MENU--BOTTOM*/
+
+	/*SECRETARIA VIRTUAL*/
+		.helpIcons{
+			display: none;
+		}
+		.secretaria--virtual{
+	margin:0 0px 15px 0px;
+	}
+
+		.secretaria--virtual--item--text{
+					width: 235px;
+					margin-top: 10px;
+				}
+				.secretaria--virtual--item fieldset{
+					padding:5px 5px;
+					flex-direction: column;
+				}
+		
+	/*END OF SECRETARIA VIRTUAL*/
+	
+	/*MAINCONTENT*/
+		.main--container{
+			grid-template-columns: 1fr;
+		}
+		/*MENU--TOP*/
+		.main--top{
+			flex-direction: column;
+		}
+		.video--title{
+		padding:20px;
+		font-size: 0.8rem;
+	}
+		.video--item{
+			width: 100%;
+	}
+		.slider--width{
+			width: 300px;
+	}
+		.slider--item img{
+		width: 95vw;
+	}
+		.journal--top h1, h2{
+			font-size: 0.8rem;
+		}
+		.journal--middle--item{
+			padding:10px 10px 25px 10px;
+		}
+		.journal--middle--img img{
+			width: 100%;
+		}
+		/*END OF MENU--TOP*/
+
+		/*MENU--BOTTOM*/
+			.main--bottom--title{
+				font-size: 0.8rem;
+	}
+			.main--bottom--title--big{
+				font-size: 0.9rem;
+			}
+			.news--and--events{
+				grid-template-columns: repeat(2,1fr);
+				align-items: flex-end;
+				gap:10px;
+			}
+		.news--and--events--item--title{
+				width: 130px;
+				font-size: 0.5rem;
+			}
+			
+			.bunch--of--links--item a{
+				font-size: 0.5rem;
+			}
+		/*END OF MENU--BOTTOM*/
+
+		/*ASIDE*/
+			.facebook--title{
+				font-size: 0.7rem;
+				margin-bottom: 0px;
+		}
+		.social--sharing{
+			height: 300px;
+		}
+		.social--sharing h1{
+			line-height: 300px;
+			font-size: 1.5rem;
+		}
+		.warnings--title{
+		padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.text--only{
+			font-size: 0.6rem;
+		}
+		.courses--title{
+			padding:15px 20px;
+			font-size: 0.8rem;
+		}
+		.courses--item--text{
+			font-size: 0.6rem;
+		}
+		/*END OF ASIDE*/
+	/*END OF MAINCONTENT*/
+	
+	/*FOOTER*/
+	.first--header{
+		padding:15px 35px;
+	}
+	.first--header a, span{
+		font-size: 0.7rem;
+	}
+		.quick--links{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			padding-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 15px;
+	}
+	.quick--links--item--title{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 10px;
+		font-size: 0.7rem;
+}
+	.quick--links--item{
+		margin-right: 15px;
+		margin-bottom: 15px;
+	}
+	.quick--links--item--links--inner a{
+		font-size: 0.7rem;
+	}
+	.quick--links--item--links--inner span{
+		font-size: 0.7rem;
+		margin-bottom: 25px;
+	}
+
+	.banner img{
+				width: 300px;
+				margin-top: 20px;
+			}
+			.contacts{
+			padding-left: 90px;
+	}
+	.contacts{
+		padding-left: 50px;
+	}
+	.contacts--item--button a button{
+		font-size: 0.6rem;
+	}
+	.contacts--title{
+		font-size: 0.7rem;
+}
+.contacts--item--street, .contacts--item--number, .contacts--item--email{
+	font-size: 0.7rem;
+}
+.last--header{
+	padding:30px;
+	font-size: 0.6rem;
+	text-align: center;
+	}
+	/*END OF FOOTER*/
+}
+/*END OF MOBILE VERSION*/
